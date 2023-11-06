@@ -4,7 +4,7 @@ let variableTwo = prompt('Variable two', '');
 
 if (variableOne === variableTwo) {
     console.log('equally')
-}else{
+}else {
     console.log('Not equally');
 } 
 

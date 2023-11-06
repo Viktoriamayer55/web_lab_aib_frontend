@@ -16,26 +16,26 @@ console.log('Good game is'+ condition);
 let peremennaya = 5;
 let stroka = '100';
 let bool_peremennaya = true;
-console.log(peremennaya+stroka);
-console.log(peremennaya+bool_peremennaya);
-console.log(stroka+bool_peremennaya);
-console.log(stroka+peremennaya);
-console.log(bool_peremennaya+peremennaya);
-console.log(bool_peremennaya+stroka);
+console.log(peremennaya + stroka);
+console.log(peremennaya + bool_peremennaya);
+console.log(stroka + bool_peremennaya);
+console.log(stroka + peremennaya);
+console.log(bool_peremennaya + peremennaya);
+console.log(bool_peremennaya + stroka);
 
 //Задание 3.
 let arr = [];
-function getRandom(){
+function getRandom() {
     //Генерация положительных и отрицательных чисел
     return Math.ceil(Math.random() * 11) * (Math.round(Math.random()) ? 1 : -1)
 }
-for(i=0;i<10;i++){
+for (i = 0; i < 10; i++) {
     //заполнение массива
     arr[i] = getRandom();
 }
 //убрать из массива числа меньше 0
-let c = arr.filter(function(currentValue){
-    return currentValue>=0;
+let c = arr.filter(function(currentValue) {
+    return currentValue >= 0;
 })
 //обычный массив
 console.log(arr);
@@ -44,16 +44,16 @@ console.log(c);
 
 //Задание 4.
 //Функция возвращает случайное число
-function getRandomNumb(){
-    return Math.round(Math.random()*101);
+function getRandomNumb() {
+    return Math.round(Math.random() * 101);
 }
 let random_number = getRandomNumb();
 console.log(random_number);
 
 //Функция выводит массив, полученный в результате умножения второго параметра на каждый элемент массива, полученного в качестве первого параметра
-function multiplyNumbArray(mass, num){
+function multiplyNumbArray(mass, num) {
     let new_mass = [];
-    for(let i=0;i<mass.length;i++){
+    for(let i = 0; i < mass.length; i++) {
         new_mass.push(mass[i] * num);
     }
     return new_mass;
@@ -64,7 +64,7 @@ console.log("Результат:");
 let new_massiv = multiplyNumbArray(massiv,number);
 console.log(new_massiv)
 //анонимная функция, которая будет генерировать случайное слово, вывести в консоль сгенерированное слово
-let random_word = function (){
+let random_word = function () {
     let result = '';
     let length = 5;
     const symbol = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -86,14 +86,17 @@ human.patronymic = 'Akakievich';
 human.birthday = '6-06-1996';
 human.hobby = 'drink beer';
 human.group = 'rabotiaga';
-human.getInfo = function(){
+human.getInfo = function() {
     const currentDate = new Date();
     const birthDate = new Date(this.birthday);
     const age = currentDate.getFullYear() - birthDate.getFullYear();
     return `FiO: ${this.surname} ${this.firstName} ${this.patronymic}\nBirthday Year: ${birthDate.getFullYear()}\nHobby: ${this.hobby}\nAge: ${age}`;
 }
 alert(person.getInfo());
-const salary = {Vasiliy: 50000, Arnold: 98000, Tolyan: 15000, Angela: 150000, Iisus: 100000000, Valera: 9000, Maria: 30000, Pavel: 10000, Konstantin: 45000, Igor: 75000 };
+const salary = {Vasiliy: 50000, Arnold: 98000, Tolyan: 15000,
+                Angela: 150000, Iisus: 100000000, Valera: 9000,
+                Maria: 30000, Pavel: 10000, Konstantin: 45000, 
+                Igor: 75000};
 let sum_salary = 0;
 for (let key in salary) {
     sum_salary += salary[key];

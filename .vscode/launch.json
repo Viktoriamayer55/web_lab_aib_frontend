@@ -8,7 +8,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\labs\\labs/Lab_07_refactoring\\solution\\lab7_2.js"
+            "program": "${workspaceFolder}\\labs\\labs/Lab_07_refactoring\\solution\\lab7_3.js"
         },
         {
             "type": "node-terminal",
@@ -20,7 +20,7 @@
             "type": "node",
             "name": "Run Current File",
             "request": "launch",
-            "program": "${workspaceFolder}\\labs\\Lab_07_refactoring\\solution\\lab7_2.js"
+            "program": "${workspaceFolder}\\labs\\Lab_07_refactoring\\solution\\lab7_3.js"
         }
     ]
 }
