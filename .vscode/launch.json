@@ -8,7 +8,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\labs\\Lab_12_python_intro\\solution\\Task1.py"
+            "program": "${workspaceFolder}\\labs\\Lab_13_python_oop\\solution\\main.py"
         },
         {
             "type": "node-terminal",
@@ -20,7 +20,7 @@
             "type": "node",
             "name": "Run Current File",
             "request": "launch",
-            "program": "${workspaceFolder}\\labs\\Lab_12_python_intro\\solution\\Task1.py"
+            "program": "${workspaceFolder}\\labs\\Lab_13_python_oop\\solution\\main.py"
         }
     ]
 }
