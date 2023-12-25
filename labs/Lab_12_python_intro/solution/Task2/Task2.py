@@ -4,14 +4,14 @@ Sub = file.readline().split()
 X = list(map(int, Sub))
 medians = []
 
-for i in range (n):
+for i in range(n):
     sequence = X[:i + 1]
     sequence.sort()
 
     if (i + 1) % 2 != 0:
-        medianSeq = sequence [(i + 1) // 2]
+        medianSeq = sequence[(i + 1) // 2]
     else:
-        medianSeq = sequence [i // 2]
+        medianSeq = sequence[i // 2]
     medians.append(medianSeq)
 medianSum = sum(medians)
 

@@ -1,7 +1,8 @@
 file = open('text1.txt')
 number = file.read()
-N,M = map(int, number.split())
-a =[]
+N, M = map(int, number.split())
+a = []
+
 for i in range(N):
     a.append([0] * M)
 a[0][0] = 1
